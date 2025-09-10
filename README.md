@@ -1,10 +1,11 @@
 ## Summary of Findings
 
-- The baseline Scikit-learn MLPClassifier achieved moderate accuracy, demonstrating the limitations of simple neural networks on image data.
-- The simple CNN (TensorFlow/Keras) significantly improved accuracy, showing the effectiveness of convolutional layers for image classification.
-- The advanced CNN, with data augmentation and regularization (dropout, early stopping), achieved the highest test accuracy and best generalization, reducing overfitting.
-- Data augmentation (random rotations, shifts, zoom) helped the model learn more robust features from limited data.
-- Visualizations (confusion matrix, sample predictions) provided insight into model strengths and common misclassifications.
+- **Baseline MLPClassifier (Scikit-learn):** Achieved ~87% accuracy. This demonstrates the limitations of simple, fully connected neural networks for image data, as they do not capture spatial features well.
+- **Simple CNN (TensorFlow/Keras):** Achieved ~92% accuracy. The use of convolutional layers allows the model to learn spatial hierarchies, significantly improving performance over the MLP.
+- **Advanced CNN with Data Augmentation:** Achieved up to ~94% accuracy. Data augmentation (random rotations, shifts, zoom) and regularization (dropout, early stopping) improved generalization and reduced overfitting.
+- **Confusion Matrix:** Used to visualize the number of correct and incorrect predictions for each class. This helps identify which classes are most often confused by the model, revealing strengths and weaknesses beyond overall accuracy.
+- **Predicted vs. True Diagram (Sample Predictions):** Shows random test images with both predicted and true labels. This provides a qualitative sense of model performance, highlights specific successes and failures, and helps spot systematic errors (e.g., confusing similar clothing items).
+
 
 # FashionMNIST_ImageClassification
 
