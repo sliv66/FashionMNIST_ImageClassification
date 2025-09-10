@@ -1,3 +1,11 @@
+## Summary of Findings
+
+- The baseline Scikit-learn MLPClassifier achieved moderate accuracy, demonstrating the limitations of simple neural networks on image data.
+- The simple CNN (TensorFlow/Keras) significantly improved accuracy, showing the effectiveness of convolutional layers for image classification.
+- The advanced CNN, with data augmentation and regularization (dropout, early stopping), achieved the highest test accuracy and best generalization, reducing overfitting.
+- Data augmentation (random rotations, shifts, zoom) helped the model learn more robust features from limited data.
+- Visualizations (confusion matrix, sample predictions) provided insight into model strengths and common misclassifications.
+
 # FashionMNIST_ImageClassification
 
 This project demonstrates image classification on the FashionMNIST dataset using both traditional machine learning and advanced deep learning techniques. It includes:
